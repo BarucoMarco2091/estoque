@@ -1,0 +1,23 @@
+<script>
+SI=parseInt(prompt("Qual é o saldo inicial?: "));		// SI é saldo inicial
+do{
+QP=parseInt(prompt("Informe a quantidade de peças: ")); 	// QP é quantidade de peças
+TE=parseInt(prompt("Digite 1 para compra ou 2 para venda: "));  // TE é tipo de entrada
+CED=prompt("Digite s para sim ou n para não: ");	// CED é continuar entrada de dados
+if (TE == 1)
+	{
+	SI=SI+QP;
+	document.write(QP);
+	}
+if (TE == 2) and (SI>QP)
+	{
+	SI=SI-QP;
+	document.write(QP);
+	}
+else
+	{
+	alert("saldo insuficiente");
+	}
+} while (CED == "s");
+document.write("sistema encerrado");
+</script>
